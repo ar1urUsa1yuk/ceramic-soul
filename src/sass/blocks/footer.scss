@@ -1,0 +1,127 @@
+@use "/src/sass/base/variables.scss" as *;
+
+.footer {
+    padding: 50px 0;
+    background-color: $dark;
+    color: $light;
+
+    &__subtitle {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19px;
+    }
+
+    &__form {
+        display: block;
+        background-color: $dark;
+        border: none;
+        border-bottom: 1px solid $ui-active;
+        outline: none;
+        padding: 0 0 14.5px 0;
+        width: 293px;
+        margin-top: 40px;
+        color: $light;
+        font-size: 14px;
+        line-height: 17px;
+        border-radius: 0;
+
+        &::placeholder {
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            color: $ui-active;
+        }
+    }
+
+    &__input {
+        width: 293px;
+    }
+
+    &__label {
+        margin-top: 20px;
+        color: $light;
+    }
+
+    &__wrapper {
+        column-gap: 66px;
+        margin-top: 40px;
+    }
+
+    &__mod {
+        margin-top: 20px;
+    }
+
+    &__wrapper-list {
+        padding: 0;
+
+        li {
+            margin-bottom: 20px;
+            list-style-type: none;
+        }
+    }
+
+    &__wrapper-social-link {
+        display: flex;
+        column-gap: 10px;
+        font-size: 24px;
+        padding: 0;
+
+        li {
+            list-style-type: none;
+        }
+    }
+
+    &__info {
+        margin-top: 40px;
+        text-align: center;
+        color: $light;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .footer {
+
+        &__wrapper {
+            column-gap: 66px;
+        }
+
+        &__wrapper-item {
+            width: auto;
+
+            &:last-child {
+                margin-left: auto;
+            }
+        }
+
+        &__mod {
+            margin-top: 0;
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .footer {
+        &__wrap {
+            display: flex;
+            column-gap: 164px;
+        }
+
+        &__wrapper {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .footer {
+        padding: 80px 0 51px 0;
+
+        &__wrap {
+            column-gap: 314px;
+        }
+    }
+}

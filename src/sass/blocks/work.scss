@@ -2,7 +2,7 @@
 
 .works {
     padding-top: 60px;
-    padding-bottom: 60px;
+    padding-bottom: 105px;
 
     &__slider-wrapper {
         position: relative;
@@ -80,6 +80,10 @@
             transform: translateY(-50%);
         }
 
+        .swiper-pagination {
+            bottom: -40px;
+        }
+
         .icon-left-open {
             left: 0;
         }
@@ -92,7 +96,7 @@
 
 @media screen and (min-width: 1920px) {
     .works {
-        padding: 100px 0;
+        padding: 140px 0;
 
         &__slider {
             margin: 80px 85px 0 85px;
