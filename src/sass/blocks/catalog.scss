@@ -37,4 +37,123 @@
             background-color: #000;
         }
     }
+
+    &__content {
+        margin-top: 60px;
+    }
+
+    &__cards {
+        display: flex;
+        row-gap: 20px;
+        flex-direction: column;
+
+    }
+
+    &__card {
+        display: block;
+        box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.25);
+
+        &-title-wrapper {
+            border: 1px solid $dark;
+            padding: 12px 12px 17px 12px;
+        }
+
+        &-img {
+            width: 100%;
+        }
+
+        &-price {
+            margin-top: 8px;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .catalog {
+        &__tabs {
+            width: 460px;
+        }
+
+        &__content {
+            &-item {
+                position: relative;
+                padding: 10px 10px 0 10px;
+
+                &::before {
+                    position: absolute;
+                    content: '';
+                    top: 0;
+                    left: 0;
+                    width: 200px;
+                    height: 200px;
+                    border-left: 1px solid $dark;
+                    border-top: 1px solid $dark;
+                    z-index: -1;
+                }
+            }
+        }
+
+        &__cards {
+            gap: 20px;
+            flex-direction: row;
+            flex-wrap: wrap;
+
+        }
+
+        &__card {
+            width: 340px;
+            min-height: 275px;
+
+            &-img {
+                height: 198px;
+                object-fit: cover;
+            }
+
+            &-price {
+                margin-top: 10px;
+            }
+
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .catalog {
+
+        &__content {
+            &-item {
+                padding: 25px 25px 0 25px;
+            }
+        }
+
+        &__cards {
+            gap: 35px;
+        }
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .catalog {
+        padding-top: 40px;
+
+        &__title {
+            margin-top: 100px;
+        }
+
+        &__content {}
+
+        &__cards {
+            row-gap: 25px;
+            column-gap: 83px;
+        }
+
+        &__card {
+            width: 285px;
+            min-height: 250px;
+
+            &-img {
+                height: 180px;
+            }
+        }
+    }
 }

@@ -30,6 +30,16 @@
     margin-bottom: 40px;
 }
 
+.title-card-h2 {
+    @include title;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+    text-align: left;
+    color: #000;
+    text-transform: none;
+}
+
 @media screen and (min-width: 768px) {
 
     .title-h1,
