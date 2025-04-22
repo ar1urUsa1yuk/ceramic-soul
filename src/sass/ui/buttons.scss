@@ -44,6 +44,18 @@
     }
 }
 
+.btn-read {
+    @include button;
+    width: 145px;
+    height: 32px;
+    font-size: 14px;
+
+    &:focus {
+        outline: 1px solid $Ceramic;
+        border: none;
+    }
+}
+
 @media screen and (min-width: 1920px) {
     .btn-default {
         width: 330px;
@@ -68,6 +80,18 @@
     }
 
     .btn-form {
+        &:active {
+            outline: 1px solid $Ceramic;
+            border: 1px solid $Ceramic;
+        }
+
+        &:hover {
+            color: $Ceramic;
+            border: 1px solid $Ceramic;
+        }
+    }
+
+    .btn-read {
         &:active {
             outline: 1px solid $Ceramic;
             border: 1px solid $Ceramic;

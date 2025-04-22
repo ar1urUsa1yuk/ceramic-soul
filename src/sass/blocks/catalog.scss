@@ -50,11 +50,15 @@
     }
 
     &__card {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
         box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.25);
 
         &-title-wrapper {
-            border: 1px solid $dark;
+            border-left: 1px solid $dark;
+            border-bottom: 1px solid $dark;
+            border-right: 1px solid $dark;
             padding: 12px 12px 17px 12px;
         }
 
