@@ -1,7 +1,7 @@
 @use "/src/sass/base/variables.scss" as *;
 
 .blog {
-    padding: 50px 0 60px 0;
+    padding: 50px 0 0 0;
 
     &__title {
         margin-top: 60px;
@@ -65,17 +65,58 @@
                 border-top: 1px solid $dark;
                 z-index: -1;
             }
+        }
 
-            &__text {
-                margin-top: 15px;
-            }
+        &__text {
+            margin-top: 15px;
+        }
 
-            &__data {
-                &-column {
-                    gap: 0;
-                    justify-content: space-between;
-                }
+        &__data {
+            &-column {
+                gap: 0;
+                justify-content: space-between;
             }
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .blog {
+        &__wrapper {
+            gap: 50px;
+        }
+
+        &__card {
+            width: 520px;
+            height: fit-content;
+        }
+
+        &__img {
+            height: 240px;
+            object-fit: cover;
+        }
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .blog {
+        padding: 40px 0 0 0;
+
+        &__title {
+            margin-top: 100px;
+        }
+
+        &__wrapper {
+            gap: 40px 50px;
+        }
+
+        &__card {
+            width: 670px;
+            height: auto;
+        }
+
+        &__img {
+            width: 335px;
         }
     }
 }
